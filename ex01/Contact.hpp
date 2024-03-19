@@ -6,7 +6,7 @@
 /*   By: rgreiner <rgreiner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 12:15:52 by rgreiner          #+#    #+#             */
-/*   Updated: 2024/03/15 13:40:21 by rgreiner         ###   ########.fr       */
+/*   Updated: 2024/03/19 13:36:12 by rgreiner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,15 @@
 class Contact
 {
 private:
+
+public:
+    Contact(void);
+    ~Contact(void);
     std::string first_name;
     std::string last_name;
     std::string nickname;
     std::string phone_number;
     std::string darkest_secret;
-public:
-    Contact(void);
-    ~Contact(void);
 };
 
 #endif
