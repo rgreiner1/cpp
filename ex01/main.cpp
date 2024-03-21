@@ -6,7 +6,7 @@
 /*   By: rgreiner <rgreiner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 12:14:05 by rgreiner          #+#    #+#             */
-/*   Updated: 2024/03/19 18:21:14 by rgreiner         ###   ########.fr       */
+/*   Updated: 2024/03/21 14:20:27 by rgreiner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,11 @@ int main()
 			return (1);
 		if (userinput == "ADD")
 		{
-			if (len <= 8)
-			len++;
 			phonebook.fill_info(contact, i);
 			i++;
-			if (i > 9)
-				i = 0;
 		}
 		if (userinput == "SEARCH")
-			phonebook.print_phonebook(contact, len);
+			phonebook.print_phonebook(contact, 8);
 	}
-
 	return 0;
 }
